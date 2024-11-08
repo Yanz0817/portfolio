@@ -49,7 +49,6 @@ color: #FFF;
 
 
 
-
 .bgcontent{
 	display: flex;
 	align-content: center;
@@ -62,7 +61,6 @@ color: #FFF;
 	overflow: hidden;
 	white-space: nowrap;
 	display: inline-block;
-
 	animation: typing 2.5s steps(40, end), blink-caret .5s step-end infinite;
   }
 
@@ -144,10 +142,10 @@ color: #FFF;
 
 .my-image {
 	
-	width: 350px; /* Set the width of the image */
+	width: 250px; /* Set the width of the image */
 	height: 350px; /* Maintain the aspect ratio */
 	border: 1px solid black; /* Add a border for visibility */
-	margin-left: 100px;
+	margin-left: 0px;
 	margin-top: 15px;
 	border-radius: 25px;
 }
@@ -309,6 +307,9 @@ a.navbar-brand img {
 #menu .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	color:#e73131;
 	background:transparent;
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
 }
 a.navbar-brand {
 	padding:0px;
@@ -1406,3 +1407,11 @@ color:#fff;
 }
 
 /*Basic-Stylesheets-End-Here*/
+.navbar-nav ul {
+	display: flex;
+	flex-direction: row; /* Horizontal layout */
+	gap: 5px; /* Space between items */
+	padding-left: 0;
+	list-style: none;
+	justify-content: center; /* Center align if needed */
+  }
